@@ -1,0 +1,19 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+	outline: none;
+}
+
+a {
+	color: $mainOrange;
+}

@@ -5,29 +5,55 @@
     <title>Matheus Web Dev</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
   </head>
   <body>
 
-  <section id="home">
-    <div>Eu sou Matheus</div>
-    <h1>Desenvolvedor <span>Web</span></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt semper tristique. Nulla nec molestie nisl. Aliquam interdum vehicula dui, vel pellentesque risus aliquet vel.</p>
-    <div class="social-icons">
-      <ul class="social-icons__list-inline">
-        <li class="hex"><a href="#"><i class="fa fa-facebook"></i>facebook</a></li>
-        <li class="hex"><a href="#"><i class="fa fa-twitter"></i>twitter</a></li>
-        <li class="hex"><a href="#"><i class="fa fa-behance"></i>behance</a></li>
-        <li class="hex"><a href="#"><i class="fa fa-dribbble"></i>dribbble</a></li>
-        <li class="hex"><a href="#"><i class="fa fa-pinterest"></i>pinterest</a></li>
-      </ul>
-    </div> <!-- /.social-icons -->
-    
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        LOGO
+      </div>
+
+      <div class="site-header__menu-content">
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#sobre-mim" id="sobre-mim-link">Sobre mim</a></li>
+            <li><a href="#servicos" id="servicos-link">Serviços</a></li>
+            <li><a href="#Portfolio" id="Portfolio-link">Portfolio</a></li>
+            <li><a href="#testemunhos" id="testemunhos-link">Testemunhos</a></li>
+            <li><a href="#experiencias" id="experiencias-link">Experiencias</a></li>
+            <li><a href="#contato" id="contato-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="welcome-area">
+    <div class="welcome-area__backstretch">
+      <img src="assets/images/slide-1.jpg" alt="test-background">
+    </div>
+
+    <div class="welcome-area__text-content">
+      <div class="wrapper">
+        <h1 class="welcome-area__top-text">Eu sou Matheus Fernandes</h1>
+        <h1 class="welcome-area__bottom-text">Desenvolvedor <span>Web</span></h1>
+        <div class="social-icons">
+          <a href="#"><span><i class="fa fa-facebook"></i></span></a>
+          <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+          <a href="#"><span><i class="fa fa-behance"></i></span></a>
+          <a href="#"><span><i class="fa fa-dribbble"></i></span></a>
+          <a href="#"><span><i class="fa fa-pinterest"></i></span></a>
+        </div> <!-- /.social-icons -->
+      </div>
+    </div>
     <div class="mouse-icon">
       <div class="mouse-icon__wheel"></div>
     </div>
   </section>
- 
+
   </body>
 </html>

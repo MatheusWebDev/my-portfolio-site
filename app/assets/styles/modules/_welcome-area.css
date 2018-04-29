@@ -1,0 +1,41 @@
+.welcome-area {
+  position: relative;
+
+  &__backstretch {
+    overflow: hidden;
+    height: 100vh;
+    background: black;
+
+    img {
+      transform: translateY(-120px);
+      opacity: .5;
+    }
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__top-text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: $mainOrange;
+  }
+
+  &__bottom-text {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 3.75rem;
+    margin: 10px 0 20px;
+  }
+}
