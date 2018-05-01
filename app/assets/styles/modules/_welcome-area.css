@@ -7,7 +7,8 @@
     background: black;
 
     img {
-      transform: translateY(-120px);
+      -webkit-transform: translateY(-120px);
+              transform: translateY(-120px);
       opacity: .5;
     }
   }
@@ -16,7 +17,8 @@
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 100%;
     text-align: center;
     color: #fff;
@@ -34,8 +36,12 @@
 
   &__bottom-text {
     font-family: 'Montserrat',sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 3.75rem;
     margin: 10px 0 20px;
+
+    span {
+      font-weight: 300;
+    }
   }
 }
