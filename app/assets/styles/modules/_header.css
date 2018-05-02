@@ -1,0 +1,17 @@
+.site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0;
+    height: 60px;
+    
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    
+    &__menu-contant {
+        
+    }
+}

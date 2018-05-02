@@ -371,8 +371,6 @@ a {
   }
 
 .welcome-area__backstretch img {
-      -webkit-transform: translateY(-120px);
-              transform: translateY(-120px);
       opacity: .5;
     }
 
@@ -388,20 +386,36 @@ a {
   }
 
 .welcome-area__top-text {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     line-height: 24px;
     margin: 0;
-    letter-spacing: 11px;
+    letter-spacing: 7px;
     text-transform: uppercase;
     color: #e8ae46;
   }
 
 .welcome-area__bottom-text {
     font-family: 'Montserrat',sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3.75rem;
-    margin: 10px 0 20px;
+    margin: 10px 0 35px;
+    letter-spacing: 2px;
+  }
+
+.welcome-area__bottom-text span {
+      font-weight: 400;
+    }
+
+.welcome-area__mouse-icon {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
   }
 
 .social-icons {
@@ -410,11 +424,76 @@ a {
 
 .social-icons span {
 		background: rgba(0,0,0,.4);
-		font-size: 14px;
-		width: 35px;
-		height: 35px;
-		line-height: 35px;
+		font-size: 1.25rem;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
 		border-radius: 50%;
 		display: inline-block;
 		color: #fff;
+	}
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding: 10px 0;
+    height: 60px;
+}
+
+.site-header__logo {
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+
+.site-header__menu-contant {
+        
+    }
+
+.wrapper {
+	overflow: hidden;
+	padding-right: 18px;
+	padding-left: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper .wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.primary-nav--pull-right {
+    	padding-top: 0;
+    	float: right;
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+.primary-nav ul::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.primary-nav li {
+		list-style: none;
+		display: block;
+		padding-right: 20px;
+		float: left;
+	}
+
+.primary-nav li a {
+		    text-decoration: none;
+		    color: #fff;
+		    text-transform: uppercase;
+		}
+
+.primary-nav li:last-child {
+		padding-right: 20px;
 	}
