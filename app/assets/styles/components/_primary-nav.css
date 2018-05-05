@@ -1,0 +1,68 @@
+.primary-nav {
+	height: 40px;
+	opacity: 0;
+	z-index: -1;
+	transform: translateX(100px);
+	max-width: 100%;
+	transition: all .5s ease-out;
+	position: relative;
+	padding-top: 5px;
+	text-align: center;
+
+	@mixin atMedium {
+		transform: translateX(170px);
+	}
+
+	@mixin atLarge {
+		opacity: 1;
+		z-index: 1;
+		transform: translateX(0);
+	}
+
+	&--visible {
+		transform: translateX(0);
+		opacity: 1;
+		z-index: 1;
+	}
+
+	&--pull-right {
+			@mixin atLarge {
+				float: right;
+			}
+	}
+
+	ul {
+		@mixin clearfix;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding-right: 7px;
+
+		@mixin atMedium {
+			padding-right: 3px;
+		}
+
+		@mixin atLarge {
+			padding-right: 20px;
+			float: left;
+			display: block;
+		}
+	}
+
+	li:last-child {
+		padding-right: 0;
+	}
+
+	a {
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+			transition: color .3s ease-out;
+
+		&:hover {
+			color: $mainOrange;
+		}
+	}
+}

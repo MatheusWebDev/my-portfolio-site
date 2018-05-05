@@ -1,19 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+	padding: 0;
+  box-sizing: inherit;
+	outline: none;
+}
+
+/* html {
+	font-size: 62.5%;
+} */
+
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #333;
+	box-sizing: border-box;
 }
 
 img {
 	max-width: 100%;
-	height: auto;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-	outline: none;
+	max-height: auto;
 }
 
 a {
 	color: $mainOrange;
+}
+
+.hidden-mobile {
+  display: none;
+
+  @mixin atSmall {
+    display: inline;
+  }
 }

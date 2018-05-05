@@ -1,0 +1,28 @@
+.container {
+	overflow: hidden;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@mixin atSmall {
+		max-width: 540px;
+	}
+
+	@mixin atMedium {
+		max-width: 720px;
+	}
+
+	@mixin atLarge {
+		max-width: 960px;
+	}
+
+	@mixin atExtraLarge {
+		max-width: 1140px;
+	}
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

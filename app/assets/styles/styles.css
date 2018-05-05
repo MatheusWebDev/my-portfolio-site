@@ -1,9 +1,10 @@
-@import "normalize.css";
-@import "base/_variables";
+/* @import "normalize.css"; */
+@import "abstracts/_variables";
+@import "abstracts/_mixins";
+@import "abstracts/_animations";
 @import "base/_global";
-@import "base/_mixins";
-@import "modules/_welcome-area";
-@import "modules/_social-icons";
-@import "modules/_header";
-@import "modules/_wrapper";
-@import "modules/_primary-nav";
+@import "components/_welcome-area";
+@import "components/_social-icons";
+@import "components/_header";
+@import "components/_container";
+@import "components/_primary-nav";

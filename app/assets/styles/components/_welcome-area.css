@@ -1,0 +1,101 @@
+.welcome-area {
+  position: relative;
+
+  &__backstretch {
+    overflow: hidden;
+    height: 100vh;
+    background: black;
+
+    img {
+
+      opacity: .5;
+    }
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__top-text {
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    color: $mainOrange;
+
+    @mixin atSmall {
+      letter-spacing: .4rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+      line-height: 24px;
+      letter-spacing: .4rem;
+    }
+  }
+
+  &__bottom-text {
+    display: block;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin: 0 0 30px;
+    letter-spacing: .1875rem;
+
+    @mixin atSmall {
+      font-size: 2.75rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.75rem;
+      margin: 5px 0 26px;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__scroll-down {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+  }
+
+  &__easing-mouse {
+    width: 24px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 13px;
+    background: transparent;
+    display: block;
+    transition: all .3s ease-out;
+
+    .wheel {
+        width: 4px;
+        height: 7px;
+        background-color: #fff;
+        border-radius: 38%;
+        margin: 8px auto 0;
+        animation: mouse-wheel 1.4s infinite ease;
+    }
+
+    &:hover {
+      border-color: $mainOrange;
+      .wheel {
+        background-color: $mainOrange;
+      }
+    }
+  }
+}
