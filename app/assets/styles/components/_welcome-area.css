@@ -7,7 +7,6 @@
     background: black;
 
     img {
-
       opacity: .5;
     }
   }
@@ -23,7 +22,11 @@
     color: #fff;
 
     &--typed-height {
-      height: 130px;
+      height: 90px;
+
+      @mixin atSmall {
+        height: 130px;
+      }
     }
   }
 
@@ -35,6 +38,7 @@
     letter-spacing: .5rem;
     text-transform: uppercase;
     color: $mainOrange;
+    backface-visibility: hidden;
 
     @mixin atSmall {
       letter-spacing: .4rem;
@@ -69,7 +73,6 @@
   .typed-cursor {
     font-weight: 300;
     font-size: 1.6rem;
-    animation: blink .7s infinite;
 
     @mixin atSmall {
       font-size: 2.6rem;
