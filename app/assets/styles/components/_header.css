@@ -10,11 +10,12 @@
   }
 
   &__menu-icon {
-    width: 20px;
+    width: 25px;
     height: 18px;
     position: relative;
     top: 7px;
     float: right;
+    z-index: 2;
 
     &::before {
     	content: "";
@@ -56,18 +57,17 @@
     }
 	}
 
-  &__menu-icon--close-x {
+  &__menu-icon--close {
 		&::before {
-			transform: rotate(45deg) scaleX(1.25);
+			transform: rotate(45deg) scaleX(1);
 		}
 
-		.site-header__menu-icon__middle {
+		.header__menu-icon__middle {
 			opacity: 0;
-			transform: scaleX(0);
 		}
 
 		&::after {
-			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			transform: rotate(-45deg) scaleX(1) translateY(1px);
 		}
 	}
 }

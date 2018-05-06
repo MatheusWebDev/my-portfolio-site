@@ -18,11 +18,20 @@ gulp.task('watch', function(){
 	});
 
 	watch('./app/assets/styles/**/*.css', function() {
-		  gulp.series('styles','cssInject')();
+	  gulp.series('styles','cssInject')();
 	});
+
+  watch('./app/assets/scripts/**/*.js', function() {
+		gulp.series('scripts', 'scriptsRefresh')();
+	});
+
 });
 
 gulp.task('cssInject', function() {
    return gulp.src('./app/temp/styles/*.css')
 	.pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', function() {
+	browserSync.reload();
 });
