@@ -21,6 +21,10 @@
     width: 100%;
     text-align: center;
     color: #fff;
+
+    &--typed-height {
+      height: 130px;
+    }
   }
 
   &__top-text {
@@ -44,12 +48,13 @@
   }
 
   &__bottom-text {
-    display: block;
+    display: inline-block;
     font-family: 'Montserrat',sans-serif;
     font-weight: 600;
     font-size: 1.75rem;
     margin: 0 0 30px;
     letter-spacing: .1875rem;
+    @mixin clearfix;
 
     @mixin atSmall {
       font-size: 2.75rem;
@@ -59,9 +64,20 @@
       font-size: 3.75rem;
       margin: 5px 0 26px;
     }
+  }
 
-    span {
-      font-weight: 400;
+  .typed-cursor {
+    font-weight: 300;
+    font-size: 1.6rem;
+    animation: blink .7s infinite;
+
+    @mixin atSmall {
+      font-size: 2.6rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.6rem;
+      margin: 5px 0 26px;
     }
   }
 

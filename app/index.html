@@ -23,17 +23,18 @@
       <div class="header__menu-icon">
         <div class="header__menu-icon__middle"></div>
       </div>
-
-      <nav class="primary-nav primary-nav--pull-right">
-        <ul>
-          <li><a href="#sobre-mim" id="sobre-mim-link">Sobre mim</a></li>
-          <li><a href="#servicos" id="servicos-link">Serviços</a></li>
-          <li><a href="#Portfolio" id="Portfolio-link">Portfólio</a></li>
-          <li><a href="#testemunhos" id="testemunhos-link">Testemunhos</a></li>
-          <li><a href="#experiencias" id="experiencias-link">Currículo</a></li>
-          <li><a href="#contato" id="contato-link">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="header__menu-content">
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#sobre-mim" id="sobre-mim-link">Sobre mim</a></li>
+            <li><a href="#servicos" id="servicos-link">Serviços</a></li>
+            <li><a href="#Portfolio" id="Portfolio-link">Portfólio</a></li>
+            <li><a href="#testemunhos" id="testemunhos-link">Testemunhos</a></li>
+            <li><a href="#experiencias" id="experiencias-link">Currículo</a></li>
+            <li><a href="#contato" id="contato-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -44,9 +45,9 @@
 
     <div class="welcome-area__text-content">
       <div class="container">
-        <h1>
+        <h1 class="welcome-area__text-content--typed-height">
           <span class="welcome-area__top-text">Eu sou Matheus <span class="hidden-mobile">Fernandes</span></span>
-          <span class="welcome-area__bottom-text">Web Designer<span>|</span></span>
+          <span id="typed-strings" class="welcome-area__bottom-text"></span>
         </h1>
         <div class="social-icons">
           <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>

@@ -1,29 +1,4 @@
 .primary-nav {
-	height: 40px;
-	opacity: 0;
-	z-index: -1;
-	transform: translateX(100px);
-	max-width: 100%;
-	transition: all .5s ease-out;
-	position: relative;
-	padding-top: 5px;
-	text-align: center;
-
-	@mixin atMedium {
-		transform: translateX(170px);
-	}
-
-	@mixin atLarge {
-		opacity: 1;
-		z-index: 1;
-		transform: translateX(0);
-	}
-
-	&--visible {
-		transform: translateX(0);
-		opacity: 1;
-		z-index: 1;
-	}
 
 	&--pull-right {
 			@mixin atLarge {
@@ -37,16 +12,12 @@
 
 	li {
 		list-style: none;
-		display: inline-block;
-		padding-right: 7px;
-
-		@mixin atMedium {
-			padding-right: 3px;
-		}
+		display: block;
+		padding: 10px 0;
 
 		@mixin atLarge {
-			padding-right: 20px;
 			float: left;
+			padding: 0 20px 0 0;
 			display: block;
 		}
 	}
