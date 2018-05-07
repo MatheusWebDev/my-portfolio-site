@@ -10391,9 +10391,9 @@ jQuery.isNumeric = function( obj ) {
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( true ) {
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
 		return jQuery;
-	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+	}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
@@ -10449,7 +10449,11 @@ var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _typed = __webpack_require__(3);
+var _TabPanel = __webpack_require__(3);
+
+var _TabPanel2 = _interopRequireDefault(_TabPanel);
+
+var _typed = __webpack_require__(4);
 
 var _typed2 = _interopRequireDefault(_typed);
 
@@ -10457,7 +10461,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mobileMenu = new _MobileMenu2.default();
 // var tabPanel = new TabPanel();
-// TabPanel();
+
 (0, _jquery2.default)('.about-section__nav-tabs li span').click(function () {
   var tab_id = (0, _jquery2.default)(this).attr('data-tab');
 
@@ -10532,6 +10536,72 @@ exports.default = MobileMenu;
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TabPanel = function () {
+  function TabPanel() {
+    _classCallCheck(this, TabPanel);
+
+    this.spanNavTabs = (0, _jquery2.default)('.about-section__nav-tabs li span');
+    this.liNavTabs = (0, _jquery2.default)('.about-section__nav-tabs li');
+    this.tabPane = (0, _jquery2.default)('.tab-pane');
+    this.tabID = this.spanNavTabs.attr('data-tab');
+    this.tabAdd = (0, _jquery2.default)('#' + this.tabID);
+    this.events();
+  }
+
+  _createClass(TabPanel, [{
+    key: 'events',
+    value: function events() {
+      this.spanNavTabs.click(this.changeTabs.bind(this));
+    }
+  }, {
+    key: 'changeTabs',
+    value: function changeTabs() {
+      console.log((0, _jquery2.default)(this.spanNavTabs).attr('data-tab'));
+      this.liNavTabs.removeClass('about-section__nav-tabs--active');
+      this.tabPane.removeClass(['active', 'in']);
+      this.liNavTabs.addClass('about-section__nav-tabs--active');
+      this.tabAdd.addClass(['active', 'in']);
+    }
+  }]);
+
+  return TabPanel;
+}();
+
+exports.default = TabPanel;
+
+// $('.about-section__nav-tabs li span').click(function(){
+//   var tab_id = $(this).attr('data-tab');
+
+//   $('.about-section__nav-tabs li').removeClass('about-section__nav-tabs--active');
+//   $('.tab-pane').removeClass('active');
+//   $('.tab-pane').removeClass('in');
+
+//   $(this).parent().addClass('about-section__nav-tabs--active');
+//   $("#"+tab_id).addClass('in');
+//   $("#"+tab_id).addClass('active');
+// });
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!

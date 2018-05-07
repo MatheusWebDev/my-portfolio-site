@@ -1,10 +1,11 @@
 import $ from 'jquery';
 import MobileMenu from './modules/MobileMenu';
+import TabPanel from './modules/TabPanel';
 import Typed from 'typed.js';
 
 var mobileMenu = new MobileMenu();
 // var tabPanel = new TabPanel();
-// TabPanel();
+
 $('.about-section__nav-tabs li span').click(function(){
   var tab_id = $(this).attr('data-tab');
 
