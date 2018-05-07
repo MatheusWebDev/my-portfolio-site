@@ -3,6 +3,7 @@
 @import "abstracts/_mixins";
 @import "abstracts/_animations";
 @import "base/_global";
+@import "base/_transitions";
 @import "components/_welcome-area";
 @import "components/_social-icons";
 @import "components/_header";
@@ -11,3 +12,4 @@
 @import "components/_row";
 @import "components/_page-section";
 @import "components/_about-section";
+@import "components/_generic-content";

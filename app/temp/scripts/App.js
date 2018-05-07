@@ -10456,6 +10456,19 @@ var _typed2 = _interopRequireDefault(_typed);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
+// var tabPanel = new TabPanel();
+// TabPanel();
+(0, _jquery2.default)('.about-section__nav-tabs li span').click(function () {
+  var tab_id = (0, _jquery2.default)(this).attr('data-tab');
+
+  (0, _jquery2.default)('.about-section__nav-tabs li').removeClass('about-section__nav-tabs--active');
+  (0, _jquery2.default)('.tab-pane').removeClass('active');
+  (0, _jquery2.default)('.tab-pane').removeClass('in');
+
+  (0, _jquery2.default)(this).parent().addClass('about-section__nav-tabs--active');
+  (0, _jquery2.default)("#" + tab_id).addClass('in');
+  (0, _jquery2.default)("#" + tab_id).addClass('active');
+});
 
 var options = {
   strings: ["Web Designer", "UX Designer", "Web Developer"],

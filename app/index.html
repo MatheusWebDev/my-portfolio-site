@@ -12,16 +12,14 @@
     <script type="text/javascript" src="temp/scripts/Vendor.js"></script>
 
   </head>
-  
+
   <body>
-    
-    <!--===== HEADER =====-->
+    <!-- HEADER --------------------------------------------->
     <header class="header">
       <div class="container">
         <div class="header__logo-box">
           <a href=""><img src="assets\images\matheus-logo.png" alt="Matheus"></a>
         </div>
-  
         <div class="header__menu-icon">
           <div class="header__menu-icon__middle"></div>
         </div>
@@ -37,16 +35,16 @@
             </ul>
           </nav>
         </div>
-      </div>
+      </div><!--/.container-->
     </header>
-    <!--===== FIM HEADER =====-->
-    
-    <!--===== WELCOME SECTION =====-->
+    <!-- FIM HEADER --------------------------------------------->
+
+    <!-- WELCOME SECTION ----------------------------------------------->
     <section id="welcome-area" class="welcome-area">
       <div class="welcome-area__backstretch">
         <a href="#"><img src="assets/images/slide-3.jpg" alt="test-background"></a>
       </div>
-  
+
       <div class="welcome-area__text-content">
         <div class="container">
           <h1 class="welcome-area__text-content--typed-height">
@@ -60,7 +58,7 @@
             <a href="#"><span><i class="fa fa-behance" aria-hidden="true"></i></span></a>
             <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
           </div> <!-- /.social-icons -->
-        </div>
+        </div><!--/.container-->
       </div>
       <div class="welcome-area__scroll-down">
         <a class="welcome-area__easing-mouse" href="#">
@@ -68,31 +66,73 @@
   			</a>
       </div>
     </section>
-    <!--===== FIM WELCOME SECTION =====-->
-    
-    <!--===== SOBRE MIM SECTION =====-->
+    <!-- FIM WELCOME SECTION ----------------------------------------------->
+
+    <!-- SOBRE MIM SECTION ----------------------------------------------->
     <section id="sobre-mim" class="about-section page-section">
       <div class="container">
         <div class="row">
           <div class="row__col-md-5">
             <div class="author-image">
-              <img src="assets/images/foto.jpg" alt="Author Image"> <!--=== sobre-mim foto ===-->
+              <img src="assets/images/foto.jpg" alt="Author Image"> <!-- sobre-mim foto -->
             </div>
           </div>
-        
+
           <div class="row__col-md-7">
             <div class="about-section__tab-panel" role="tabpanel">
               <ul class="about-section__nav-tabs" role="tablist"> <!-- Nav tabs -->
-                <li role="presentation" class="about-section__nav-tabs--active"><a href="#Section1" role="tab" data-toggle="tab" aria-expanded="true">Sobre mim</a></li>
-                <li role="presentation" class=""><a href="#Section2" role="tab" data-toggle="tab" aria-expanded="false">Habilidades</a></li>
+                <li role="presentation" class="about-section__nav-tabs--active"><span data-tab="tab-1">Sobre mim</span></li>
+                <li role="presentation" class=""><span data-tab="tab-2">Habilidades</span></li>
               </ul>
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade active in" id="Section1"> <!-- Single Tab -->
-                  <h4 class="about-heading">I'm 24 years old creative <span>web</span> &amp; <span>Graphic</span> Designer</h4>
+              <div class="about-section__tab-content">
+                <div role="tabpanel" class="tab-pane generic-content fade active in" id="tab-1"> <!-- Single Tab -->
+                  <h4>I'm 24 years old creative <span>web</span> &amp; <span>Graphic</span> Designer</h4>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <a href="#">currículo</a>
                   <a href="#">contato</a>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab-2"> <!-- Single Tab -->
+                  <div class="single-skill"> <!-- Single Skill -->
+                    <div class="skill-info">
+                      <h4>html/css</h4>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"><span>85%</span></div>
+                    </div>
+                  </div>
+                  <div class="single-skill"> <!-- Single Skill -->
+                    <div class="skill-info">
+                      <h4>javascript</h4>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span>90%</span></div>
+                    </div>
+                  </div>
+                  <div class="single-skill"> <!-- Single Skill -->
+                    <div class="skill-info">
+                      <h4>php/Laravel </h4>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"><span>75%</span></div>
+                    </div>
+                  </div>
+                  <div class="single-skill"> <!-- Single Skill -->
+                    <div class="skill-info">
+                      <h4>UI/UX Design</h4>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"><span>85%</span></div>
+                    </div>
+                  </div>
+                  <div class="single-skill"> <!-- Single Skill -->
+                    <div class="skill-info">
+                      <h4>photoshop</h4>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span>80%</span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

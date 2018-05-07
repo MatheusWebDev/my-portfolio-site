@@ -19,7 +19,6 @@
             transform: translateY(-45%);
     width: 100%;
     text-align: center;
-    color: #fff;
 
     &--typed-height {
       height: 90px;
@@ -32,13 +31,13 @@
 
   &__top-text {
     display: block;
+    font-family: 'Poppins', sans-serif;
+    color: $mainOrange;
     font-weight: 300;
     font-size: 1rem;
     margin: 0;
     letter-spacing: .5rem;
     text-transform: uppercase;
-    color: $mainOrange;
-    backface-visibility: hidden;
 
     @mixin atSmall {
       letter-spacing: .4rem;
@@ -53,9 +52,9 @@
 
   &__bottom-text {
     display: inline-block;
-    font-family: 'Montserrat',sans-serif;
     font-weight: 600;
     font-size: 1.75rem;
+    color: #fff;
     margin: 0 0 30px;
     letter-spacing: .1875rem;
     @mixin clearfix;
@@ -71,6 +70,7 @@
   }
 
   .typed-cursor {
+    color: #fff;
     font-weight: 300;
     font-size: 1.6rem;
 

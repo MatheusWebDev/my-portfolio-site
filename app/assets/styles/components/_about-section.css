@@ -1,46 +1,63 @@
 .about-section {
-    &__tab-panel {
-        margin-top: 30px;
-        @mixin atMedium {
-            margin-top: 0;
-        }
+  &__tab-panel {
+    margin-top: 30px;
+    @mixin atMedium {
+      margin-top: 0;
     }
-    
-    &__nav-tabs {
-        list-style: none;
-        border: none;
-        margin-bottom: 50px;
-        @mixin clearfix;
-        
-        li {
-            width: 50%;
-            text-align: center;
-            float: left;
-            display: block;
-            margin-bottom: -1px;
-        }
-        
-        a {
-            font-family: 'Montserrat', sans-serif;
-            width: 85%;
-            margin: 0 auto;
-            display: block;
-            border-bottom: 2px solid #ddd;
-            font-size: 1rem;
-            color: #222;
-            padding: 10px 0 5px;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-            @mixin atLarge {
-                width: 60%;
-                padding: 10px 15px 5px;
-            }
-        }
-        
-        &--active a {
-            border-bottom: 2px solid $mainOrange;
-            color: $mainOrange;
-        }
+  }
+
+  &__nav-tabs {
+    list-style: none;
+    border: none;
+    margin-bottom: 25px;
+    @mixin clearfix;
+    @mixin atMedium {
+      margin-bottom: 50px;
     }
+
+    li {
+      width: 50%;
+      text-align: center;
+      float: left;
+      display: block;
+      margin-bottom: -1px;
+    }
+
+    span {
+      font-family: 'Montserrat', sans-serif;
+      width: 85%;
+      margin: 0 auto;
+      display: block;
+      border-bottom: 2px solid #ddd;
+      font-size: 1rem;
+      color: #222;
+      padding: 10px 0 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      @mixin atLarge {
+        width: 60%;
+        padding: 10px 15px 5px;
+      }
+    }
+
+    &--active span {
+      border-bottom: 2px solid $mainOrange;
+      color: $mainOrange;
+    }
+  }
+
+  &__tab-content {
+    padding: 15px;
+    margin-top: 0;
+    transition: all .3s ease-in-out;
+    .tab-pane {
+      display: none;
+      transition: all .3s ease-in-out;
+    }
+
+    .active {
+      display: block;
+    }
+  }
 }

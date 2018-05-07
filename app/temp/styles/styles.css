@@ -58,7 +58,7 @@
 } */
 body {
 	font-family: 'Poppins', sans-serif;
-	color: #333;
+	color: #444;
 	box-sizing: border-box;
 }
 img {
@@ -68,6 +68,14 @@ img {
 a {
 	color: #e8ae46;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  margin: 0 0 15px;
+}
+p {
+    margin: 0 0 10px;
+}
 .hidden-mobile {
   display: none;
 }
@@ -76,6 +84,14 @@ a {
     display: inline
 }
 	}
+.fade {
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+.fade.in {
+  opacity: 1;
+  transition: opacity .3s ease-out;
+}
 .welcome-area {
   position: relative;
 }
@@ -95,7 +111,6 @@ a {
             transform: translateY(-45%);
     width: 100%;
     text-align: center;
-    color: #fff;
   }
 .welcome-area__text-content--typed-height {
       height: 90px;
@@ -107,14 +122,13 @@ a {
 	}
 .welcome-area__top-text {
     display: block;
+    font-family: 'Poppins', sans-serif;
+    color: #e8ae46;
     font-weight: 300;
     font-size: 1rem;
     margin: 0;
     letter-spacing: .5rem;
     text-transform: uppercase;
-    color: #e8ae46;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
   }
 @media (min-width: 576px) {
 .welcome-area__top-text {
@@ -130,9 +144,9 @@ a {
 	}
 .welcome-area__bottom-text {
     display: inline-block;
-    font-family: 'Montserrat',sans-serif;
     font-weight: 600;
     font-size: 1.75rem;
+    color: #fff;
     margin: 0 0 30px;
     letter-spacing: .1875rem;
   }
@@ -153,6 +167,7 @@ a {
   }
 	}
 .welcome-area .typed-cursor {
+    color: #fff;
     font-weight: 300;
     font-size: 1.6rem;
   }
@@ -463,50 +478,85 @@ a {
 }
 	}
 .about-section__tab-panel {
-        margin-top: 30px;
-    }
+    margin-top: 30px;
+  }
 @media (min-width: 768px) {
 .about-section__tab-panel {
-            margin-top: 0
-    }
+      margin-top: 0
+  }
 	}
 .about-section__nav-tabs {
-        list-style: none;
-        border: none;
-        margin-bottom: 50px;
-    }
+    list-style: none;
+    border: none;
+    margin-bottom: 25px;
+  }
 .about-section__nav-tabs::after {
 		content: "";
 		clear: both;
 		display: table;
 	}
-.about-section__nav-tabs li {
-            width: 50%;
-            text-align: center;
-            float: left;
-            display: block;
-            margin-bottom: -1px;
-        }
-.about-section__nav-tabs a {
-            font-family: 'Montserrat', sans-serif;
-            width: 85%;
-            margin: 0 auto;
-            display: block;
-            border-bottom: 2px solid #ddd;
-            font-size: 1rem;
-            color: #222;
-            padding: 10px 0 5px;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-@media (min-width: 992px) {
-.about-section__nav-tabs a {
-                width: 60%;
-                padding: 10px 15px 5px
-        }
+@media (min-width: 768px) {
+.about-section__nav-tabs {
+      margin-bottom: 50px
+  }
 	}
-.about-section__nav-tabs--active a {
-            border-bottom: 2px solid #e8ae46;
-            color: #e8ae46;
-        }
+.about-section__nav-tabs li {
+      width: 50%;
+      text-align: center;
+      float: left;
+      display: block;
+      margin-bottom: -1px;
+    }
+.about-section__nav-tabs span {
+      font-family: 'Montserrat', sans-serif;
+      width: 85%;
+      margin: 0 auto;
+      display: block;
+      border-bottom: 2px solid #ddd;
+      font-size: 1rem;
+      color: #222;
+      padding: 10px 0 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+@media (min-width: 992px) {
+.about-section__nav-tabs span {
+        width: 60%;
+        padding: 10px 15px 5px
+    }
+	}
+.about-section__nav-tabs--active span {
+      border-bottom: 2px solid #e8ae46;
+      color: #e8ae46;
+    }
+.about-section__tab-content {
+    padding: 15px;
+    margin-top: 0;
+    transition: all .3s ease-in-out;
+  }
+.about-section__tab-content .tab-pane {
+      display: none;
+      transition: all .3s ease-in-out;
+    }
+.about-section__tab-content .active {
+      display: block;
+    }
+.generic-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+.generic-content h4 span {
+      color: #e8ae46;
+    }
+.generic-content p {
+    line-height: 28px;
+    font-size: .875rem;
+  }
+@media (min-width: 768px) {
+.generic-content p {
+      font-size: .9375rem
+  }
+	}

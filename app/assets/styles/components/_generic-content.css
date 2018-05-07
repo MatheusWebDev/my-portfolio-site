@@ -1,0 +1,20 @@
+.generic-content {
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    span {
+      color: $mainOrange;
+    }
+  }
+
+  p {
+    line-height: 28px;
+    font-size: .875rem;
+    @mixin atMedium {
+      font-size: .9375rem;
+    }
+  }
+}
