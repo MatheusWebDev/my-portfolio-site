@@ -379,3 +379,134 @@ a {
 .primary-nav a:hover {
 			color: #e8ae46;
 		}
+.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+@media (min-width: 768px) {
+    
+    	.row__col-md-4 {
+    		float: left;
+        	width: 33.33333333%;
+    	}
+    	
+        .row__col-md-5 {
+          float: left;
+          width: 41.66666667%;
+        }
+    	
+        .row__col-md-6 {
+          float: left;
+          width: 50%;
+        }
+        
+        .row__col-md-7 {
+          float: left;
+          width: 58.33333333%;
+        }
+    
+    	.row__col-md-8 {
+    		float: left;
+    		width: 66.66%;
+    	}
+    	
+    	.row__col-md-4,
+    	.row__col-md-5,
+    	.row__col-md-6,
+    	.row__col-md-7,
+    	.row__col-md-8 {
+    	    position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+    	}
+	}
+@media (min-width: 992px) {
+        
+    	.row__col-lg-4 {
+    		float: left;
+        	width: 33.33333333%;
+    	}
+    	
+        .row__col-lg-5 {
+          float: left;
+          width: 41.66666667%;
+        }
+    	
+        .row__col-lg-6 {
+          float: left;
+          width: 50%;
+        }
+        
+        .row__col-lg-7 {
+          float: left;
+          width: 58.33333333%;
+        }
+    
+    	.row__col-lg-8 {
+    		float: left;
+    		width: 66.66%;
+    	}
+	}
+.page-section {
+	padding: 3rem 0;
+}
+@media (min-width: 768px) {
+.page-section {
+		padding: 4.5rem 0
+}
+	}
+@media (min-width: 992px) {
+.page-section {
+		padding: 6rem 0
+}
+	}
+.about-section__tab-panel {
+        margin-top: 30px;
+    }
+@media (min-width: 768px) {
+.about-section__tab-panel {
+            margin-top: 0
+    }
+	}
+.about-section__nav-tabs {
+        list-style: none;
+        border: none;
+        margin-bottom: 50px;
+    }
+.about-section__nav-tabs::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+.about-section__nav-tabs li {
+            width: 50%;
+            text-align: center;
+            float: left;
+            display: block;
+            margin-bottom: -1px;
+        }
+.about-section__nav-tabs a {
+            font-family: 'Montserrat', sans-serif;
+            width: 85%;
+            margin: 0 auto;
+            display: block;
+            border-bottom: 2px solid #ddd;
+            font-size: 1rem;
+            color: #222;
+            padding: 10px 0 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+@media (min-width: 992px) {
+.about-section__nav-tabs a {
+                width: 60%;
+                padding: 10px 15px 5px
+        }
+	}
+.about-section__nav-tabs--active a {
+            border-bottom: 2px solid #e8ae46;
+            color: #e8ae46;
+        }

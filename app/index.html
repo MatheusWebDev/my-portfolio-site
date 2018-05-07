@@ -12,61 +12,95 @@
     <script type="text/javascript" src="temp/scripts/Vendor.js"></script>
 
   </head>
+  
   <body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header__logo-box">
-        <a href=""><img src="assets\images\matheus-logo.png" alt="Matheus"></a>
-      </div>
-
-      <div class="header__menu-icon">
-        <div class="header__menu-icon__middle"></div>
-      </div>
-      <div class="header__menu-content">
-        <nav class="primary-nav primary-nav--pull-right">
-          <ul>
-            <li><a href="#sobre-mim" id="sobre-mim-link">Sobre mim</a></li>
-            <li><a href="#servicos" id="servicos-link">Serviços</a></li>
-            <li><a href="#Portfolio" id="Portfolio-link">Portfólio</a></li>
-            <li><a href="#testemunhos" id="testemunhos-link">Testemunhos</a></li>
-            <li><a href="#experiencias" id="experiencias-link">Currículo</a></li>
-            <li><a href="#contato" id="contato-link">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section class="welcome-area">
-    <div class="welcome-area__backstretch">
-      <a href="#"><img src="assets/images/slide-3.jpg" alt="test-background"></a>
-    </div>
-
-    <div class="welcome-area__text-content">
+    
+    <!--===== HEADER =====-->
+    <header class="header">
       <div class="container">
-        <h1 class="welcome-area__text-content--typed-height">
-          <span class="welcome-area__top-text">Eu sou Matheus <span class="hidden-mobile">Fernandes</span></span>
-          <span id="typed-strings" class="welcome-area__bottom-text"></span>
-        </h1>
-        <div class="social-icons">
-          <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-          <a href="#"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-          <a href="#"><span><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
-          <a href="#"><span><i class="fa fa-behance" aria-hidden="true"></i></span></a>
-          <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
-        </div> <!-- /.social-icons -->
+        <div class="header__logo-box">
+          <a href=""><img src="assets\images\matheus-logo.png" alt="Matheus"></a>
+        </div>
+  
+        <div class="header__menu-icon">
+          <div class="header__menu-icon__middle"></div>
+        </div>
+        <div class="header__menu-content">
+          <nav class="primary-nav primary-nav--pull-right">
+            <ul>
+              <li><a href="#sobre-mim" id="sobre-mim-link">Sobre mim</a></li>
+              <li><a href="#servicos" id="servicos-link">Serviços</a></li>
+              <li><a href="#Portfolio" id="Portfolio-link">Portfólio</a></li>
+              <li><a href="#testemunhos" id="testemunhos-link">Testemunhos</a></li>
+              <li><a href="#experiencias" id="experiencias-link">Currículo</a></li>
+              <li><a href="#contato" id="contato-link">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    <div class="welcome-area__scroll-down">
-      <a class="welcome-area__easing-mouse" href="#">
-				<div class="wheel"></div>
-			</a>
-    </div>
-  </section>
+    </header>
+    <!--===== FIM HEADER =====-->
+    
+    <!--===== WELCOME SECTION =====-->
+    <section id="welcome-area" class="welcome-area">
+      <div class="welcome-area__backstretch">
+        <a href="#"><img src="assets/images/slide-3.jpg" alt="test-background"></a>
+      </div>
+  
+      <div class="welcome-area__text-content">
+        <div class="container">
+          <h1 class="welcome-area__text-content--typed-height">
+            <span class="welcome-area__top-text">Eu sou Matheus <span class="hidden-mobile">Fernandes</span></span>
+            <span id="typed-strings" class="welcome-area__bottom-text"></span>
+          </h1>
+          <div class="social-icons">
+            <a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+            <a href="#"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+            <a href="#"><span><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
+            <a href="#"><span><i class="fa fa-behance" aria-hidden="true"></i></span></a>
+            <a href="#"><span><i class="fa fa-github" aria-hidden="true"></i></span></a>
+          </div> <!-- /.social-icons -->
+        </div>
+      </div>
+      <div class="welcome-area__scroll-down">
+        <a class="welcome-area__easing-mouse" href="#">
+  				<div class="wheel"></div>
+  			</a>
+      </div>
+    </section>
+    <!--===== FIM WELCOME SECTION =====-->
+    
+    <!--===== SOBRE MIM SECTION =====-->
+    <section id="sobre-mim" class="about-section page-section">
+      <div class="container">
+        <div class="row">
+          <div class="row__col-md-5">
+            <div class="author-image">
+              <img src="assets/images/foto.jpg" alt="Author Image"> <!--=== sobre-mim foto ===-->
+            </div>
+          </div>
+        
+          <div class="row__col-md-7">
+            <div class="about-section__tab-panel" role="tabpanel">
+              <ul class="about-section__nav-tabs" role="tablist"> <!-- Nav tabs -->
+                <li role="presentation" class="about-section__nav-tabs--active"><a href="#Section1" role="tab" data-toggle="tab" aria-expanded="true">Sobre mim</a></li>
+                <li role="presentation" class=""><a href="#Section2" role="tab" data-toggle="tab" aria-expanded="false">Habilidades</a></li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="Section1"> <!-- Single Tab -->
+                  <h4 class="about-heading">I'm 24 years old creative <span>web</span> &amp; <span>Graphic</span> Designer</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <a href="#">currículo</a>
+                  <a href="#">contato</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--/.row-->
+      </div> <!--/.container-->
+    </section>
 
-
-  <script type="text/javascript" src="temp/scripts/App.js"></script>
-
+    <script type="text/javascript" src="temp/scripts/App.js"></script>
   </body>
 </html>

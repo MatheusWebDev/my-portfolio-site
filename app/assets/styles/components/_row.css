@@ -1,0 +1,69 @@
+.row {
+    @mixin clearfix;
+    @mixin atMedium {
+    
+    	&__col-md-4 {
+    		float: left;
+        	width: 33.33333333%;
+    	}
+    	
+        &__col-md-5 {
+          float: left;
+          width: 41.66666667%;
+        }
+    	
+        &__col-md-6 {
+          float: left;
+          width: 50%;
+        }
+        
+        &__col-md-7 {
+          float: left;
+          width: 58.33333333%;
+        }
+    
+    	&__col-md-8 {
+    		float: left;
+    		width: 66.66%;
+    	}
+    	
+    	&__col-md-4,
+    	&__col-md-5,
+    	&__col-md-6,
+    	&__col-md-7,
+    	&__col-md-8 {
+    	    position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+    	}
+    }
+
+    @mixin atLarge {
+        
+    	&__col-lg-4 {
+    		float: left;
+        	width: 33.33333333%;
+    	}
+    	
+        &__col-lg-5 {
+          float: left;
+          width: 41.66666667%;
+        }
+    	
+        &__col-lg-6 {
+          float: left;
+          width: 50%;
+        }
+        
+        &__col-lg-7 {
+          float: left;
+          width: 58.33333333%;
+        }
+    
+    	&__col-lg-8 {
+    		float: left;
+    		width: 66.66%;
+    	}
+    }
+}
