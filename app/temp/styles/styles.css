@@ -497,7 +497,7 @@ p {
 	}
 @media (min-width: 768px) {
 .about-section__nav-tabs {
-      margin-bottom: 50px
+      margin-bottom: 35px
   }
 	}
 .about-section__nav-tabs li {
@@ -542,6 +542,98 @@ p {
 .about-section__tab-content .active {
       display: block;
     }
+.about-section .ac-container .single-ac {
+      margin-bottom: 10px;
+    }
+.about-section .ac-container label {
+      position: relative;
+      z-index: 20;
+      display: block;
+      cursor: pointer;
+      height: 65px;
+    }
+.about-section .ac-container label:hover {
+      }
+.about-section .ac-container input:checked + label,
+    .about-section .ac-container input:checked + label:hover {
+    }
+.about-section .ac-container input + label:hover .single-skill::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      right: 13px;
+      top: 2px;
+      background: transparent url(../images/arrow_down.png) no-repeat center center;
+    }
+.about-section .ac-container input:checked + label:hover .single-skill::after{
+	    background-image: url(../images/arrow_up.png);
+    }
+.about-section .ac-container input {
+      display: none;
+    }
+.about-section .ac-container article {
+    	margin-top: -10px;
+    	overflow: hidden;
+    	height: 0px;
+    	position: relative;
+    	z-index: 10;
+    	transition: height 0.3s ease-in-out;
+    }
+.about-section .ac-container article p {
+        padding: 7px;
+      }
+.about-section .ac-container input:checked ~ article{
+	    transition: height 0.5s ease-in-out;
+    }
+.about-section .ac-container input:checked ~ article.ac-small{
+	    height: 100px;
+      margin-bottom: 10px;
+    }
+.about-section .single-skill {
+    margin-bottom: 32px;
+  }
+.about-section .skill-info {
+    overflow: hidden;
+  }
+.about-section .skill-info h4 {
+      text-transform: uppercase;
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+.about-section .progress {
+    height: 8px;
+    border-radius: 0px;
+    overflow: visible;
+    background-color: #ddd;
+    margin-bottom: 20px;
+  }
+.about-section .progress .progress-bar {
+      background-color: #e8ae46;
+      position: relative;
+      float: left;
+      height: 100%;
+      font-size: .75rem;
+      line-height: 20px;
+      color: #fff;
+      text-align: center;
+      box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+      transition: width .6s ease;
+    }
+.about-section .progress .progress-bar span {
+        background-color: #e8ae46;
+        color: #fff;
+        position: absolute;
+        top: -17px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 100%;
+        font-size: 13px;
+        font-weight: 600;
+      }
 .generic-content h4 {
     font-size: 1rem;
     font-weight: 600;
