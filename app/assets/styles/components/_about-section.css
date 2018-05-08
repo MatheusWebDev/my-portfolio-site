@@ -10,6 +10,7 @@
     list-style: none;
     border: none;
     margin-bottom: 25px;
+    margin-top: -10px;
     @mixin clearfix;
     @mixin atMedium {
       margin-bottom: 35px;
@@ -84,14 +85,14 @@
       position: absolute;
       width: 24px;
       height: 24px;
-      right: 13px;
-      top: 2px;
+      right: 5px;
+      top: 0;
       background: transparent url(../images/arrow_down.png) no-repeat center center;
     }
 
-    input:checked + label:hover .single-skill::after{
-	    background-image: url(../images/arrow_up.png);
-    }
+    /*input:checked + label:hover .single-skill::after{*/
+	   /* background-image: url(../images/arrow_up.png);*/
+    /*}*/
 
     input {
       display: none;

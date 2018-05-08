@@ -1,0 +1,11 @@
+.services-section {
+  background: #ddd;
+  
+  &__single-service {
+    background: #fff;
+    
+    &--b-margin {
+      margin-bottom: 30px;
+    }
+  }
+}
