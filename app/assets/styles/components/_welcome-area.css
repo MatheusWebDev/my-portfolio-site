@@ -54,7 +54,7 @@
     display: inline-block;
     font-weight: 600;
     font-size: 1.75rem;
-    color: #fff;
+    color: $white;
     margin: 0 0 30px;
     letter-spacing: .1875rem;
     @mixin clearfix;
@@ -70,7 +70,7 @@
   }
 
   .typed-cursor {
-    color: #fff;
+    color: $white;
     font-weight: 300;
     font-size: 1.6rem;
 
@@ -85,7 +85,7 @@
   }
 
   &__scroll-down {
-    color: #fff;
+    color: $white;
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -95,7 +95,7 @@
   &__easing-mouse {
     width: 24px;
     height: 40px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 13px;
     background: transparent;
     display: block;
@@ -104,7 +104,7 @@
     .wheel {
         width: 4px;
         height: 7px;
-        background-color: #fff;
+        background-color: $white;
         border-radius: 38%;
         margin: 8px auto 0;
         animation: mouse-wheel 1.4s infinite ease;

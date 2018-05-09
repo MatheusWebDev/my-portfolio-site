@@ -1,0 +1,7 @@
+.row {
+    @mixin clearfix;
+
+    .col-1-of-2 {
+      width: calc(100% / 2);
+    }
+}

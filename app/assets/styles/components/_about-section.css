@@ -29,7 +29,7 @@
       width: 85%;
       margin: 0 auto;
       display: block;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid $lightGray;
       font-size: 1rem;
       color: #222;
       padding: 10px 0 5px;
@@ -64,7 +64,10 @@
 
   .ac-container {
     .single-ac {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+      @mixin atMedium {
+        margin-bottom: 10px;
+      }
     }
   	label {
       position: relative;
@@ -130,14 +133,14 @@
       text-transform: uppercase;
       font-size: 15px;
       margin-bottom: 10px;
-      color: #444;
+
     }
   }
   .progress {
     height: 8px;
     border-radius: 0px;
     overflow: visible;
-    background-color: #ddd;
+    background-color: $lightGray;
     margin-bottom: 20px;
 
     .progress-bar {
@@ -147,14 +150,14 @@
       height: 100%;
       font-size: .75rem;
       line-height: 20px;
-      color: #fff;
+      color: $white;
       text-align: center;
       box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
       transition: width .6s ease;
 
       span {
         background-color: $mainOrange;
-        color: #fff;
+        color: $white;
         position: absolute;
         top: -17px;
         right: 0;

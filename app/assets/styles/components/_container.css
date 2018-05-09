@@ -2,8 +2,7 @@
 	overflow: hidden;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 
 	@mixin atSmall {
 		max-width: 540px;

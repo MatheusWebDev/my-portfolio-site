@@ -27,7 +27,7 @@
 
 	a {
 			text-decoration: none;
-			color: #fff;
+			color: $white;
 			text-transform: uppercase;
 			transition: color .3s ease-out;
 

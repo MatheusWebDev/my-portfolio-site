@@ -1,9 +1,9 @@
 .services-section {
-  background: #ddd;
-  
+  background: $lightGray;
+
   &__single-service {
-    background: #fff;
-    
+    background: $white;
+
     &--b-margin {
       margin-bottom: 30px;
     }

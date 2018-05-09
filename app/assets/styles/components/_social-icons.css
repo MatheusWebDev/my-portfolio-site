@@ -10,6 +10,6 @@
 		line-height: 2.25rem;
 		border-radius: 50%;
 		display: inline-block;
-		color: #fff;
+		color: $white;
 	}
 }

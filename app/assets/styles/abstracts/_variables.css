@@ -1,1 +1,10 @@
+/* // --- COLORS --- */
 $mainOrange: #e8ae46;
+$white: #fff;
+$headingGray: #222;
+$bodyGray: #444;
+$lightGray: #ddd;
+
+/* // --- SPACES --- */
+$gutter-horizontal: 2.5rem;
+$gutter-vertical: 1.25rem;

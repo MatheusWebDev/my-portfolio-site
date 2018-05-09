@@ -1,16 +1,22 @@
-/* @import "normalize.css"; */
 @import "abstracts/_variables";
 @import "abstracts/_mixins";
 @import "abstracts/_animations";
+
 @import "base/_global";
-@import "base/_transitions";
+@import "base/_typography";
+@import "base/_utilities";
+@import "base/_generic-content";
+
 @import "components/_welcome-area";
 @import "components/_social-icons";
-@import "components/_header";
 @import "components/_container";
 @import "components/_primary-nav";
-@import "components/_row";
+
 @import "components/_page-section";
 @import "components/_about-section";
-@import "components/_generic-content";
 @import "components/_services-section";
+
+@import "layout/_row";
+@import "layout/_header";
+
+@import "pages/_home";
